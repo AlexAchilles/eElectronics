@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eElectronics - HTML eCommerce Template</title>
+    <title>eElectronics - eCommerce</title>
     
     <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
@@ -28,12 +28,9 @@
     <link rel="stylesheet" href="<?=url("assets/web/css/style.css"); ?>">
     <link rel="stylesheet" href="<?=url("asstes/web/css/responsive.css"); ?>">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
   </head>
   <body>
    
@@ -43,9 +40,9 @@
                 <div class="col-md-8">
                     <div class="user-menu">
                         <ul>
-                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
-                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
-                            <li><a href="<?= url("/cart");?>"><i class="fa fa-user"></i> My Cart</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Minha conta</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> Lista de desejos</a></li>
+                            <li><a href="<?= url("/cart");?>"><i class="fa fa-user"></i> Meu Carinho</a></li>
                             <li><a href="<?= url("/checkout");?>"><i class="fa fa-user"></i> Checkout</a></li>
                             <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
                         </ul>
@@ -56,20 +53,21 @@
                     <div class="header-right">
                         <ul class="list-unstyled list-inline">
                             <li class="dropdown dropdown-small">
-                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Moeda :</span><span class="value"> BRL </span><b class="caret"></b></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">BRL</a></li>
                                     <li><a href="#">INR</a></li>
-                                    <li><a href="#">GBP</a></li>
+                                    <li><a href="#">USD</a></li>
                                 </ul>
                             </li>
 
                             <li class="dropdown dropdown-small">
-                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">Linguagem :</span><span class="value"> Português BR </span><b class="caret"></b></a>
                                 <ul class="dropdown-menu">
+                                    <li><a href="#">Português BR</a></li>
                                     <li><a href="#">English</a></li>
-                                    <li><a href="#">French</a></li>
-                                    <li><a href="#">German</a></li>
+                                    <li><a href="#">Français</a></li>
+                                    <li><a href="#">Español</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -90,7 +88,7 @@
                 
                 <div class="col-sm-6">
                     <div class="shopping-item">
-                        <a href="<?= url("/cart");?>">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                        <a href="<?= url("/cart");?>">Carrinho - <span class="cart-amunt">R$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
                     </div>
                 </div>
             </div>
@@ -102,7 +100,7 @@
             <div class="row">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only">Mudar a navegação</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -110,14 +108,14 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="<?= url("/home");?>">Home</a></li>
-                        <li><a href="<?= url("/shop");?>">Shop page</a></li>
-                        <li><a href="<?= url("/product");?>">Single product</a></li>
-                        <li><a href="<?= url("/cart");?>">Cart</a></li>
+                        <li><a href="<?= url("/home");?>">início</a></li>
+                        <li><a href="<?= url("/shop");?>">Catálogo de produtos</a></li>
+                        <li><a href="<?= url("/product");?>">Produto</a></li>
+                        <li><a href="<?= url("/cart");?>">Meu carrinho</a></li>
                         <li><a href="<?= url("/checkout");?>">Checkout</a></li>
-                        <li><a href="#">Category</a></li>
-                        <li><a href="#">Others</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Categoria</a></li>
+                        <li><a href="#">Outros</a></li>
+                        <li><a href="#">Contato</a></li>
                     </ul>
                 </div>  
             </div>
@@ -150,26 +148,26 @@
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">User Navigation </h2>
+                        <h2 class="footer-wid-title">Navegação do usuário </h2>
                         <ul>
-                            <li><a href="#">My account</a></li>
-                            <li><a href="#">Order history</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <li><a href="#">Vendor contact</a></li>
-                            <li><a href="#">Front page</a></li>
+                            <li><a href="#">Minha conta</a></li>
+                            <li><a href="#">Histórico de compra</a></li>
+                            <li><a href="#">Lista de desejos</a></li>
+                            <li><a href="#">Contato do vendedor</a></li>
+                            <li><a href="#">Página inicial</a></li>
                         </ul>                        
                     </div>
                 </div>
                 
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categories</h2>
+                        <h2 class="footer-wid-title">Categorias</h2>
                         <ul>
-                            <li><a href="#">Mobile Phone</a></li>
-                            <li><a href="#">Home accesseries</a></li>
-                            <li><a href="#">LED TV</a></li>
-                            <li><a href="#">Computer</a></li>
-                            <li><a href="#">Gadets</a></li>
+                            <li><a href="#">Celular</a></li>
+                            <li><a href="#">Acessórios domésticos</a></li>
+                            <li><a href="#">TV LED</a></li>
+                            <li><a href="#">Compututadores</a></li>
+                            <li><a href="#">Acessórios</a></li>
                         </ul>                        
                     </div>
                 </div>
@@ -177,11 +175,11 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="footer-newsletter">
                         <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Sign up to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                        <p>Assine a nossa newsletter e ganhe descontos exclusivos que você não vai achar em nenhum outro local, a não ser na sua caixa de email</p>
                         <div class="newsletter-form">
                             <form action="#">
-                                <input type="email" placeholder="Type your email">
-                                <input type="submit" value="Subscribe">
+                                <input type="email" placeholder="Digite seu email">
+                                <input type="submit" value="Inscreva-se">
                             </form>
                         </div>
                     </div>
@@ -195,7 +193,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class="copyright">
-                        <p>&copy; 2015 eElectronics. All Rights Reserved. Coded with <i class="fa fa-heart"></i> by <a href="http://wpexpand.com" target="_blank">WP Expand</a></p>
+                        <p>&copy; 2015 eElectronics. Todos os direitos reservados. Codado com <i class="fa fa-heart"></i> por <a href="http://wpexpand.com" target="_blank">Alexandre Achilles</a></p>
                     </div>
                 </div>
                 
