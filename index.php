@@ -15,11 +15,11 @@ $route->namespace("Source\App");
 $route->group(null);
 
 $route->get("/", "Web:home");
-$route->get("/home", "Web:home");
-$route->get("/cart", "Web:cart");
+$route->get("/inicio", "Web:home");
+$route->get("/carrinho", "Web:cart");
 $route->get("/checkout","Web:checkout");
-$route->get("/shop","Web:shop");
-$route->get("/product", "web:product");
+$route->get("/loja","Web:shop");
+$route->get("/produto", "web:product");
 $route->get("/faq","Web:faq");
 
 $route->group("/app");
