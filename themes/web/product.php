@@ -3,33 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>eElectronics - HTML eCommerce Template</title>
-    
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,700,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
-    
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="<?=url("assets/web/css/owl.carousel.css"); ?>">
-    <link rel="stylesheet" href="<?=url("assets/web/css/style.css"); ?>">
-    <link rel="stylesheet" href="<?=url("asstes/web/css/responsive.css"); ?>">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+ 
   </head>
   <body>
   <?php
@@ -42,7 +16,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="product-bit-title text-center">
-                        <h2>Shop</h2>
+                        <h2>Produto</h2>
                     </div>
                 </div>
             </div>
@@ -56,53 +30,53 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="single-sidebar">
-                        <h2 class="sidebar-title">Search Products</h2>
+                        <h2 class="sidebar-title">Procurar Produtos</h2>
                         <form action="">
-                            <input type="text" placeholder="Search products...">
-                            <input type="submit" value="Search">
+                            <input type="text" placeholder="Nome do produto...">
+                            <input type="submit" value="Procurar">
                         </form>
                     </div>
                     
                     <div class="single-sidebar">
-                        <h2 class="sidebar-title">Products</h2>
+                        <h2 class="sidebar-title">Produtos</h2>
                         <div class="thubmnail-recent">
                             <img src="assets/web/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+                            <h2><a href="">Playstation 4</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$1400,99</ins> <del>R$2560,00</del>
                             </div>                             
                         </div>
                         <div class="thubmnail-recent">
                             <img src="assets/web/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+                            <h2><a href="">Playstation 4</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$1400,99</ins> <del>R$2560,00</del>
                             </div>                             
                         </div>
                         <div class="thubmnail-recent">
                             <img src="assets/web/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+                            <h2><a href="">Playstation 4</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$1400,99</ins> <del>R$2560,00</del>
                             </div>                             
                         </div>
                         <div class="thubmnail-recent">
                             <img src="assets/web/img/product-thumb-1.jpg" class="recent-thumb" alt="">
-                            <h2><a href="">Sony Smart TV - 2015</a></h2>
+                            <h2><a href="">Playstation 4</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$1400,99</ins> <del>R$2560,00</del>
                             </div>                             
                         </div>
                     </div>
                     
                     <div class="single-sidebar">
-                        <h2 class="sidebar-title">Recent Posts</h2>
+                        <h2 class="sidebar-title">Novos Produtos</h2>
                         <ul>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
-                            <li><a href="">Sony Smart TV - 2015</a></li>
+                            <li><a href="">Playstation 4</a></li>
+                            <li><a href="">Playstation 4</a></li>
+                            <li><a href="">Playstation 4</a></li>
+                            <li><a href="">Playstation 4</a></li>
+                            <li><a href="">Playstation 4</a></li>
                         </ul>
                     </div>
                 </div>
@@ -110,9 +84,9 @@
                 <div class="col-md-8">
                     <div class="product-content-right">
                         <div class="product-breadcroumb">
-                            <a href="">Home</a>
-                            <a href="">Category Name</a>
-                            <a href="">Sony Smart TV - 2015</a>
+                            <a href="">Início</a>
+                            <a href="">Notebooks</a>
+                            <a href="">Notebook Asus</a>
                         </div>
                         
                         <div class="row">
@@ -133,41 +107,41 @@
                             
                             <div class="col-sm-6">
                                 <div class="product-inner">
-                                    <h2 class="product-name">Sony Smart TV - 2015</h2>
+                                    <h2 class="product-name">Notebook Asus</h2>
                                     <div class="product-inner-price">
-                                        <ins>$700.00</ins> <del>$800.00</del>
+                                        <ins>R$2300,00</ins> <del>R$3000,00</del>
                                     </div>    
                                     
                                     <form action="" class="cart">
                                         <div class="quantity">
                                             <input type="number" size="4" class="input-text qty text" title="Qty" value="1" name="quantity" min="1" step="1">
                                         </div>
-                                        <button class="add_to_cart_button" type="submit">Add to cart</button>
+                                        <button class="add_to_cart_button" type="submit">Add ao carrinho</button>
                                     </form>   
                                     
                                     <div class="product-inner-category">
-                                        <p>Category: <a href="">Summer</a>. Tags: <a href="">awesome</a>, <a href="">best</a>, <a href="">sale</a>, <a href="">shoes</a>. </p>
+                                        <p>Categoria: <a href="">Notebooks</a>. Tags: <a href="">Asus</a>, <a href="">Barato</a>, <a href="">Novo</a>. </p>
                                     </div> 
                                     
                                     <div role="tabpanel">
                                         <ul class="product-tab" role="tablist">
-                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+                                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Descrição</a></li>
+                                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Avaliação</a></li>
                                         </ul>
                                         <div class="tab-content">
                                             <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                                <h2>Product Description</h2>  
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique, diam in consequat iaculis, est purus iaculis mauris, imperdiet facilisis ante ligula at nulla. Quisque volutpat nulla risus, id maximus ex aliquet ut. Suspendisse potenti. Nulla varius lectus id turpis dignissim porta. Quisque magna arcu, blandit quis felis vehicula, feugiat gravida diam. Nullam nec turpis ligula. Aliquam quis blandit elit, ac sodales nisl. Aliquam eget dolor eget elit malesuada aliquet. In varius lorem lorem, semper bibendum lectus lobortis ac.</p>
+                                                <h2>Descrição do Produto</h2>  
+                                                <p>Notebook Asus Intel Core i5 8GB 512GB SSD 15,6”
+                                                Seja para trabalho ou lazer, o Notebook Asus X515JA-EJ1791W é perfeito para o dia-a-dia, que oferece desempenho e recursos visuais imersivos. Sua tela LED Backlit TFT LCD Anti-Glare de 15,6" com resolução 1920x1080 NanoEdge possui bordas incrivelmente finas e um revestimento fosco antirreflexo para uma experiência verdadeiramente envolvente. Além disso, processador Intel Core i5 1035G1 de 10ª Geração, 8GB de memória RAM, 512GB de armazenamento SSD que além de mais rápido, é mais leve e mais seguro, sistema operacional Windows 11 Home enquanto seu chassi reforçado melhora a digitação e permite abrir e fechar a tampa em um movimento suave. No interior dele, existe uma estrutura de suporte de metal embaixo do teclado que fornece uma plataforma muito mais estável ao digitar e usar o touchpad. Além de fornecer rigidez estrutural, também fortalece a articulação da dobradiça e protege os componentes internos. Os lados da tampa também são reforçados e funcionam como vigas de proteção contra impactos laterais. Eles fornecem suporte estrutural para a tampa, o painel de LED e a junta de dobradiça. Compacto, fino e leve, ainda tem bateria de 3300mAh com carregamento rápido onde carrega 60% da bateria em 49 minutos.</p>
 
-                                                <p>Mauris placerat vitae lorem gravida viverra. Mauris in fringilla ex. Nulla facilisi. Etiam scelerisque tincidunt quam facilisis lobortis. In malesuada pulvinar neque a consectetur. Nunc aliquam gravida purus, non malesuada sem accumsan in. Morbi vel sodales libero.</p>
                                             </div>
                                             <div role="tabpanel" class="tab-pane fade" id="profile">
-                                                <h2>Reviews</h2>
+                                                <h2>Avaliações</h2>
                                                 <div class="submit-review">
-                                                    <p><label for="name">Name</label> <input name="name" type="text"></p>
+                                                    <p><label for="name">Nome</label> <input name="name" type="text"></p>
                                                     <p><label for="email">Email</label> <input name="email" type="email"></p>
                                                     <div class="rating-chooser">
-                                                        <p>Your rating</p>
+                                                        <p>Sua recomendção</p>
 
                                                         <div class="rating-wrap-post">
                                                             <i class="fa fa-star"></i>
@@ -177,7 +151,7 @@
                                                             <i class="fa fa-star"></i>
                                                         </div>
                                                     </div>
-                                                    <p><label for="review">Your review</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
+                                                    <p><label for="review">O que você achou?</label> <textarea name="review" id="" cols="30" rows="10"></textarea></p>
                                                     <p><input type="submit" value="Submit"></p>
                                                 </div>
                                             </div>
@@ -190,73 +164,73 @@
                         
                         
                         <div class="related-products-wrapper">
-                            <h2 class="related-products-title">Related Products</h2>
+                            <h2 class="related-products-title">Produtos Relacionados</h2>
                             <div class="related-products-carousel">
                                 <div class="single-product">
                                     <div class="product-f-image">
                                         <img src="assets/web/img/product-1.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add ao carrinho</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Sony Smart TV - 2015</a></h2>
+                                    <h2><a href="">LG - Smart TV OLED</a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>$700.00</ins> <del>$800.00</del>
+                                        <ins>R$3400,00</ins> <del> R$4296,00</del>
                                     </div> 
                                 </div>
                                 <div class="single-product">
                                     <div class="product-f-image">
                                         <img src="assets/web/img/product-2.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add ao carrinho</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Apple new mac book 2015 March :P</a></h2>
+                                    <h2><a href="">Notebook Asus</a></h2>
                                     <div class="product-carousel-price">
-                                        <ins>$899.00</ins> <del>$999.00</del>
+                                        <ins>R$2300,00</ins> <del>R$3000,00</del>
                                     </div> 
                                 </div>
                                 <div class="single-product">
                                     <div class="product-f-image">
                                         <img src="assets/web/img/product-3.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add ao carrinho</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Apple new i phone 6</a></h2>
+                                    <h2><a href="">iPhone 6s</a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>$400.00</ins> <del>$425.00</del>
+                                        <ins>R$399,00</ins> <del> R$499,00</del>
                                     </div>                                 
                                 </div>
                                 <div class="single-product">
                                     <div class="product-f-image">
                                         <img src="assets/web/img/product-4.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add ao carrinho</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Sony playstation microsoft</a></h2>
+                                    <h2><a href="">Playstation 4</a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>$200.00</ins> <del>$225.00</del>
+                                        <ins>R$1400,99</ins> <del>R$2560,00</del>
                                     </div>                            
                                 </div>
                                 <div class="single-product">
                                     <div class="product-f-image">
                                         <img src="assets/web/img/product-5.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add ao carrinho</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                         </div>
                                     </div>
 
@@ -270,15 +244,15 @@
                                     <div class="product-f-image">
                                         <img src="assets/web/img/product-6.jpg" alt="">
                                         <div class="product-hover">
-                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
-                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> See details</a>
+                                            <a href="" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add ao carrinho</a>
+                                            <a href="" class="view-details-link"><i class="fa fa-link"></i> Ver detalhes</a>
                                         </div>
                                     </div>
 
-                                    <h2><a href="">Samsung gallaxy note 4</a></h2>
+                                    <h2><a href="">Samsung Galaxy Z Flip</a></h2>
 
                                     <div class="product-carousel-price">
-                                        <ins>$400.00</ins>
+                                        <ins>$3700.99</ins>
                                     </div>                            
                                 </div>                                    
                             </div>
