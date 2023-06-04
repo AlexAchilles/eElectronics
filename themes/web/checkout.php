@@ -823,7 +823,7 @@
 
                                             <tr class="order-total">
                                                 <th>Total do Pedido</th>
-                                                <td><strong><span class="amount">£15.00</span></strong> </td>
+                                                <td><strong><span class="amount">R$3700,99</span></strong> </td>
                                             </tr>
 
                                         </tfoot>
