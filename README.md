@@ -10,6 +10,9 @@ Este projeto visa ser um modelo de site para vendas de dispositivos eletrônicos
 ## Layout Web 
 (tenho que descobrir como coloca imagem aqui ainda kkkk)
 
+## Layout Mobile 
+(ainda não tem)
+
 ## Modelo Conceitual
 (mesmo caso do tópico de cima, só que do banco de dados)
 
