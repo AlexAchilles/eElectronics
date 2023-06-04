@@ -42,7 +42,7 @@
                         <ul>
                             <li><a href="#"><i class="fa fa-user"></i> Minha conta</a></li>
                             <li><a href="#"><i class="fa fa-heart"></i> Lista de desejos</a></li>
-                            <li><a href="<?= url("/cart");?>"><i class="fa fa-user"></i> Meu Carinho</a></li>
+                            <li><a href="<?= url("/carrinho");?>"><i class="fa fa-user"></i> Meu Carinho</a></li>
                             <li><a href="<?= url("/checkout");?>"><i class="fa fa-user"></i> Checkout</a></li>
                             <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
                         </ul>
@@ -82,13 +82,13 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="<?= url("/home");?>">e<span>Electronics</span></a></h1>
+                        <h1><a href="<?= url("/inicio");?>">e<span>Electronics</span></a></h1>
                     </div>
                 </div>
                 
                 <div class="col-sm-6">
                     <div class="shopping-item">
-                        <a href="<?= url("/cart");?>">Carrinho - <span class="cart-amunt">R$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
+                        <a href="<?= url("/carrinho");?>">Carrinho - <span class="cart-amunt">R$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></a>
                     </div>
                 </div>
             </div>
@@ -108,10 +108,10 @@
                 </div> 
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="<?= url("/home");?>">início</a></li>
-                        <li><a href="<?= url("/shop");?>">Catálogo de produtos</a></li>
-                        <li><a href="<?= url("/product");?>">Produto</a></li>
-                        <li><a href="<?= url("/cart");?>">Meu carrinho</a></li>
+                        <li><a href="<?= url("/inicio");?>">início</a></li>
+                        <li><a href="<?= url("/loja");?>">Catálogo de produtos</a></li>
+                        <li><a href="<?= url("/produto");?>">Produto</a></li>
+                        <li><a href="<?= url("/carrinho");?>">Meu carrinho</a></li>
                         <li><a href="<?= url("/checkout");?>">Checkout</a></li>
                         <li><a href="#">Categoria</a></li>
                         <li><a href="#">Outros</a></li>
