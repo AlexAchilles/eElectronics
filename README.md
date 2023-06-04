@@ -14,7 +14,7 @@ Este projeto visa ser um modelo de site para vendas de dispositivos eletrônicos
 (ainda não tem)
 
 ## Modelo Conceitual
-(mesmo caso do tópico de cima, só que do banco de dados)
+(botar imagem aqui também, só que do banco de dados)
 
 # Técnologias Utilizadas
 ## Back end
