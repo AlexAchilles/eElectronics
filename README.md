@@ -21,7 +21,7 @@ Este projeto visa ser um modelo de site para vendas de dispositivos eletrônicos
 ## Front end
 - HTML
 - CSS
-- javasript
+- javascript
 
 # Autor
 Alexandre Achilles
