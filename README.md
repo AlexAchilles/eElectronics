@@ -25,3 +25,5 @@ Este projeto visa ser um modelo de site para vendas de dispositivos eletrônicos
 
 # Autor
 Alexandre Achilles
+
+https://linkedin.com/in/alexandre-achilles
