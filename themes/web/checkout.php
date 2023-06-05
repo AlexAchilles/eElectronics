@@ -41,28 +41,28 @@
                             <img src="assets/web/img/product-thumb-4.jpg" class="recent-thumb" alt="">
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$700.00</ins> <del>R$800.00</del>
                             </div>                             
                         </div>
                         <div class="thubmnail-recent">
                             <img src="assets/web/img/product-thumb-4.jpg" class="recent-thumb" alt="">
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$700.00</ins> <del>R$800.00</del>
                             </div>                             
                         </div>
                         <div class="thubmnail-recent">
                             <img src="assets/web/img/product-thumb-4.jpg" class="recent-thumb" alt="">
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$700.00</ins> <del>R$800.00</del>
                             </div>                             
                         </div>
                         <div class="thubmnail-recent">
                             <img src="assets/web/img/product-thumb-4.jpg" class="recent-thumb" alt="">
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
                             <div class="product-sidebar-price">
-                                <ins>$700.00</ins> <del>$800.00</del>
+                                <ins>R$700.00</ins> <del>R$800.00</del>
                             </div>                             
                         </div>
                     </div>
