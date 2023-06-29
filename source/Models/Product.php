@@ -4,7 +4,7 @@ namespace Source\Models;
 
 use Source\Core\Connect;
 
-class Products
+class Product
 {
     public function selectAll ()
     {
@@ -13,9 +13,13 @@ class Products
         return $stmt->fetchAll();
     }
 
-    public function selectByCategory (string $category)
+    public function selectByCategory (string $categoryName)
     {
-        $query = "SELECT products.name, price, oldprice FROM products";
+        $query = "SELECT products.* 
+        from products 
+        join categories on categories.id = products.categories_id 
+        where categories.nome like '{$categoryName}'";
+
         $stmt = Connect::getInstance()->query($query);
         return $stmt->fetchAll();
     }

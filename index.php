@@ -18,9 +18,13 @@ $route->get("/", "Web:home");
 $route->get("/inicio", "Web:home");
 $route->get("/carrinho", "Web:cart");
 $route->get("/checkout","Web:checkout");
-$route->get("/loja","Web:shop");
 $route->get("/produto", "web:product");
 $route->get("/faq","Web:faq");
+$route->get("/loja","Web:shop");
+$route->get("/loja/{categoryName}","Web:shop");
+// $route->get("/registro", )
+
+
 
 $route->group("/app");
 $route->get("/", "App:home");

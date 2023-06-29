@@ -16,14 +16,12 @@ class Web
     }
     public function home()
     {
-        //echo "Olá, Mundo! Home";
         echo $this->view->render("home");
 
     }
 
     public function cart()
     {
-        //echo "Olá, Mundo! Sobre";
         echo $this->view->render("cart");
 
     }
@@ -33,10 +31,7 @@ class Web
         echo $this->view->render("checkout");
     }
 
-    public function shop (){
-        echo $this->view->render("shop");
-    }
-
+    
     public function product (){
         echo $this->view->render("product");
     }
@@ -48,17 +43,34 @@ class Web
         ]);
     }
 
-        public function products (array $data) {
+    //     public function products (array $data) {
+    //     $products = new Product();
+
+    //     if(!empty($data["products"])){
+    //         echo $this->view->render("products",[
+    //             "products" => $courses->getProduct($data["products"])
+    //         ]);
+    //         return;
+    //     }
+        
+    //     echo $this->view->render("products",[
+    //     "products" => $products->selectAll(),
+    //     "categories" => $this->categories
+    // ]);
+    // }
+    
+    public function shop (array $data){
         $products = new Product();
 
-        if(!empty($data["products"])){
-            echo $this->view->render("products",[
-                "products" => $courses->getProduct($data["products"])
+        if(!empty($data["categoryName"])){
+            echo $this->view->render("shop", [
+                "products" => $products->selectByCategory($data["categoryName"])
             ]);
             return;
-        }
-        echo $this->view->render("products",["products" => $products->selectAll()]);
+        } 
+        
+        echo $this->view->render("shop", [
+            "products" => $products->selectAll()
+        ]);
     }
-
-
 }
