@@ -27,6 +27,6 @@
             headers: headers
         });
         const user = await data.json();
-        console.log(user.success.user);
+        console.log(user);
     });
 </script>

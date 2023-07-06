@@ -10,7 +10,7 @@ class Users extends Api
     {
         parent::__construct();
     }
-
+    
     public function read (array $data) : void
     {
         $response = [
@@ -21,6 +21,7 @@ class Users extends Api
         http_response_code(200);
         echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
+
 
     public function create (array $data) : void
     {
@@ -51,4 +52,27 @@ class Users extends Api
             echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
         }
     }
+
+    public function login (array $data) : void
+    {
+        $user = new User();
+        if(!$user->auth($data["email"], $data["password"])){
+            $response = [
+                "code" => 401,
+                "type" => "error",
+                "message" => "Email ou senha inválidos"
+            ];
+            echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+            return;
+    
+        } else {
+        $response = [
+            "code" => 200,
+            "type" => "success",
+            "message" => "Resposta da API"
+        ];
+        echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+
+    };
+}
 }

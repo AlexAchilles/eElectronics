@@ -12,6 +12,8 @@ $route->namespace("Source\App\Api");
 
 $route->get("/user","Users:read");
 $route->post("/user","Users:create");
+$route->post("/user/login","Users:login");
+
 
 $route->dispatch();
 

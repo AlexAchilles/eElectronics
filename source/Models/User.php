@@ -81,4 +81,20 @@ class User {
         }
     }
 
+    public function auth (string $email, string $password) : bool
+    {
+        $query = "SELECT * 
+                  FROM users 
+                  WHERE users_email LIKE :email AND users_password LIKE :password";
+
+        $stmt = Connect::getInstance()->prepare($query);
+        $stmt->bindParam(":email", $email);
+        $stmt->bindParam(":password", $password);
+        $stmt->execute();
+        if($stmt->rowCount() == 0) {
+            return false;
+        }
+        return true;
+    }
+
 }

@@ -1,7 +1,5 @@
 <?php
 
-// echo("olá, zé da manga!");
-
 require __DIR__ . "/vendor/autoload.php";
 
 use CoffeeCode\Router\Router;
@@ -23,6 +21,9 @@ $route->get("/faq","Web:faq");
 $route->get("/loja","Web:shop");
 $route->get("/loja/{categoryName}","Web:shop");
 // $route->get("/registro", )
+
+$route->get("/registro","Web:register");
+$route->get("/login","Web:login");
 
 
 

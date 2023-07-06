@@ -30,7 +30,6 @@ class Web
     {
         echo $this->view->render("checkout");
     }
-
     
     public function product (){
         echo $this->view->render("product");
@@ -72,5 +71,22 @@ class Web
         echo $this->view->render("shop", [
             "products" => $products->selectAll()
         ]);
+    }
+
+    public function register(array $data)
+    {
+        if(!empty($data)){
+            $response = json_encode($data);
+            echo $response;
+            return;
+        }
+
+        echo $this->view->render("register-clean",[
+            // "categories" => $this->categories
+        ]);
+    }
+
+    public function login (array $data) : void {
+        echo $this->view->render("user-auth", []);
     }
 }
