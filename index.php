@@ -20,16 +20,16 @@ $route->get("/produto", "web:product");
 $route->get("/faq","Web:faq");
 $route->get("/loja","Web:shop");
 $route->get("/loja/{categoryName}","Web:shop");
-// $route->get("/registro", )
 
 $route->get("/registro","Web:register");
 $route->get("/login","Web:login");
 
-
-
 $route->group("/app");
 $route->get("/", "App:home");
+$route->group(null);
 
+$route->group("/admin");
+$route->get("/", "Adm:home");
 $route->group(null);
 
 $route->dispatch();

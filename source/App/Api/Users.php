@@ -53,8 +53,7 @@ class Users extends Api
         }
     }
 
-    public function login (array $data) : void
-    {
+    public function login (array $data) : void {
         $user = new User();
         if(!$user->auth($data["email"], $data["password"])){
             $response = [
@@ -72,7 +71,6 @@ class Users extends Api
             "message" => "Resposta da API"
         ];
         echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-
     };
 }
 }

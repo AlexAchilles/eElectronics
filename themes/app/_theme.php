@@ -126,69 +126,17 @@
     echo $this->section("content");
     ?>
 
-    <!-- End product widget area -->
-    
-    <div class="footer-top-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-about-us">
-                        <h2>e<span>Electronics</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis sunt id doloribus vero quam laborum quas alias dolores blanditiis iusto consequatur, modi aliquid eveniet eligendi iure eaque ipsam iste, pariatur omnis sint! Suscipit, debitis, quisquam. Laborum commodi veritatis magni at?</p>
-                        <div class="footer-social">
-                            <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-youtube"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">Navegação do usuário </h2>
-                        <ul>
-                            <li><a href="#">Minha conta</a></li>
-                            <li><a href="#">Histórico de compra</a></li>
-                            <li><a href="#">Lista de desejos</a></li>
-                            <li><a href="#">Contato do vendedor</a></li>
-                            <li><a href="#">Página inicial</a></li>
-                        </ul>                        
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-menu">
-                        <h2 class="footer-wid-title">Categorias</h2>
-                        <ul>
-                            <li><a href="#">Celular</a></li>
-                            <li><a href="#">Acessórios domésticos</a></li>
-                            <li><a href="#">TV LED</a></li>
-                            <li><a href="#">Compututadores</a></li>
-                            <li><a href="#">Acessórios</a></li>
-                        </ul>                        
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="footer-newsletter">
-                        <h2 class="footer-wid-title">Newsletter</h2>
-                        <p>Assine a nossa newsletter e ganhe descontos exclusivos que você não vai achar em nenhum outro local, a não ser na sua caixa de email</p>
-                        <div class="newsletter-form">
-                            <form action="#">
-                                <input type="email" placeholder="Digite seu email">
-                                <input type="submit" value="Inscreva-se">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> <!-- End footer top area -->
+  
     
     <div class="footer-bottom-area">
+    <style>
+    .footer-bottom-area {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+    }
+    </style>
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
