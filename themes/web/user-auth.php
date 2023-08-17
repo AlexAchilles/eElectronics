@@ -55,7 +55,7 @@
     async function request (url, options) {
         try {   
             const response = await fetch (url, options);
-            const data = await response.json();
+            const data = await response.text();
             return data;
         } catch (err) {
             console.error(err);
