@@ -7,6 +7,7 @@ use PDO;
 use PDOException;
 
 class User {
+
     private $id;
     private $name;
     private $email;
@@ -24,6 +25,22 @@ class User {
         $this->email = $email;
         $this->password = $password;
         // $this->address = $address; // Atribuição nova
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id): void
+    {
+        $this->id = $id;
     }
 
     public function getName()
@@ -72,7 +89,7 @@ class User {
         try {
             $stmt->execute();
             if($stmt->rowCount()){
-                $this->message = "Usuário inserido com sucesso!";
+                $this->message = "Usuário cadastrado com sucesso!";
                 return true;
             }
             $this->message = "Erro ao inserir usuário, verifique os dados!";
@@ -85,19 +102,6 @@ class User {
 
     public function auth (string $email, string $password) : bool
     {
-        // $query = "SELECT * 
-        //           FROM users 
-        //           WHERE users_email LIKE :email AND users_password LIKE :password";
-
-        // $stmt = Connect::getInstance()->prepare($query);
-        // $stmt->bindParam(":email", $email);
-        // $stmt->bindParam(":password", $password);
-        // $stmt->execute();
-        // if($stmt->rowCount() == 0) {
-        //     return false;
-        // }
-        // return true;
-
         $query = "SELECT * 
         FROM users 
         WHERE users_email LIKE :email";
@@ -114,13 +118,13 @@ class User {
         $user = $stmt->fetch();
 
         if(!password_verify($password, $user->password)) {
-            $this->message = "Senha incorreta";
+            $this->message = "Senha incorreta!";
             return false;
         }
 
         $this->id = $user->id;
         $this->name = $user->name;
-        $this->message = "Usuário autenticado com sucesso";
+        $this->message = "Usuário autenticado com sucesso!";
         return true;
 
     }

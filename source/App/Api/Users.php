@@ -10,38 +10,48 @@ class Users extends Api
     {
         parent::__construct();
     }
-    
+
     public function read (array $data) : void
     {
         $response = [
-            "code" => 200,
-            "type" => "success",
-            "message" => "Dados do usuário"
+            "success" => [
+                "code" => 200,
+                "type" => "accepted",
+                "message" => "Dados do usuário"
+            ],
+            "user" => [
+                /*"name" => $this->user->getName(),
+                "email" => $this->user->getEmail(),
+                "token" => $this->token*/
+            ]
         ];
         http_response_code(200);
         echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
     }
-
 
     public function create (array $data) : void
     {
        if(!empty($data)){
             $user = new User($data["name"],$data["email"],$data["password"]);
             if(!$user->insert()){
-                $response["error"] = [
-                    "code" => 400,
-                    "type" => "invalid_data",
-                    "message" => $user->getMessage()
+                $response = [
+                    "error" => [
+                        "code" => 400,
+                        "type" => "invalid_data",
+                        "message" => $user->getMessage()
+                    ]
                 ];
                 http_response_code(400);
                 echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
                 return;
             }
 
-            $response["success"] = [
-                "code" => 200,
-                "type" => "success",
-                "message" => $user->getMessage(),
+            $response = [
+                "success" => [
+                              "code" => 200,
+                              "type" => "accepted",
+                              "message" => $user->getMessage()
+                ],
                 "user" => [
                     "name" => $user->getName(),
                     "email" => $user->getEmail(),
@@ -53,24 +63,35 @@ class Users extends Api
         }
     }
 
-    public function login (array $data) : void {
+    public function login (array $data) : void
+    {
+
         $user = new User();
-        if(!$user->auth($data["email"], $data["password"])){
+
+        if(!$user->auth($data["email"],$data["password"])){
             $response = [
-                "code" => 401,
-                "type" => "error",
-                "message" => "Email ou senha inválidos"
+                "error" => [
+                    "code" => 401,
+                    "type" => "invalid_data",
+                    "message" => $user->getMessage()
+                ]
             ];
             echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
             return;
-    
-        } else {
+        }
+
         $response = [
-            "code" => 200,
-            "type" => "success",
-            "message" => "Resposta da API"
+            "success" => [
+                "code" => 200,
+                "type" => "accepted",
+                "message" => "Usuário autenticado corretamente..."
+            ]
         ];
         echo json_encode($response, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
-    };
-}
+    }
+
+    public function testToken (array $data) : void
+    {
+        echo "Olá!";
+    }
 }
