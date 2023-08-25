@@ -75,19 +75,19 @@
         };
         const resp = await request(url, options);
         console.log(resp);
-		if (resp.type !== "success") {
-			let responseDiv = document.querySelector(".response__p");
-			responseDiv.innerHTML = "Não foi possível fazer o login. Email ou senha incorretos!";
-            responseDiv.classList.remove("alert__success");
-            responseDiv.classList.add("alert__danger");
-			responseDiv.classList.add("error");
-		} else {
-			window.location.href = "<?= url("/");?>";
-		}
-
-        setTimeout(() => {
-            document.querySelector(".response").setAttribute("style", "display: none");
-        }, 3000);
+		// if (resp.type !== "success") {
+			// let responseDiv = document.querySelector(".response__p");
+			// responseDiv.innerHTML = "Não foi possível fazer o login. Email ou senha incorretos!";
+            // responseDiv.classList.remove("alert__success");
+            // responseDiv.classList.add("alert__danger");
+			// responseDiv.classList.add("error");
+		// } else {
+			// window.location.href = "<?= url("/");?>";
+		// }
+// 
+        // setTimeout(() => {
+            // document.querySelector(".response").setAttribute("style", "display: none");
+        // }, 3000);
 
         // function goToRegister(){
         //     location.href = "<?= url("/registro");?>";

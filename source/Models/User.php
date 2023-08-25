@@ -19,12 +19,12 @@ class User {
         $name = null,
         $email = null,
         $password = null,
-        // Address $address = null // Parametro novo
+        Address $address = null // Parametro novo
     ){
         $this->name = $name;
         $this->email = $email;
         $this->password = $password;
-        // $this->address = $address; // Atribuição nova
+        $this->address = $address; // Atribuição nova
     }
 
     /**
@@ -78,8 +78,58 @@ class User {
         return $this->message;
     }
 
+    public function findById (int $id) : User
+    {
+        $query = "SELECT * FROM users WHERE id = :id";
+        $stmt = Connect::getInstance()->prepare($query);
+        $stmt->bindParam(":id",$id);
+        try {
+            $stmt->execute();
+            if($stmt->rowCount()){
+                $user = $stmt->fetch();
+                $this->id = $user->id;
+                $this->name = $user->name;
+                $this->email = $user->email;
+                $this->password = $user->password;
+                return $this;
+            }
+            $this->message = "Usuário não encontrado!";
+            return $this;
+        } catch (PDOException $e) {
+            $this->message = "Erro: {$e->getMessage()}";
+            return $this;
+        }
+    }
+
+    public function findByEmail (string $email) : bool
+    {
+        $query = "SELECT * FROM users WHERE email = :email";
+        $stmt = Connect::getInstance()->prepare($query);
+        $stmt->bindParam(":email",$email);
+        try {
+            $stmt->execute();
+            if($stmt->rowCount()){
+                $user = $stmt->fetch();
+                $this->id = $user->id;
+                $this->name = $user->name;
+                $this->email = $user->email;
+                return true;
+            }
+            $this->message = "Usuário não encontrado!";
+            return false;
+        } catch (PDOException $e) {
+            $this->message = "Erro: {$e->getMessage()}";
+            return false;
+        }
+    }
+
     public function insert () : bool
     {
+        if($this->findByEmail($this->email)){
+            $this->message = "E-mail já cadastrado!";
+            return false;
+        }
+
         $query = "INSERT INTO users VALUES (NULL,:name,:email,:password)";
         $stmt = Connect::getInstance()->prepare($query);
         $stmt->bindParam(":name", $this->name);
@@ -89,6 +139,7 @@ class User {
         try {
             $stmt->execute();
             if($stmt->rowCount()){
+                $this->id = Connect::getInstance()->lastInsertId();
                 $this->message = "Usuário cadastrado com sucesso!";
                 return true;
             }
@@ -103,8 +154,8 @@ class User {
     public function auth (string $email, string $password) : bool
     {
         $query = "SELECT * 
-        FROM users 
-        WHERE users_email LIKE :email";
+                  FROM users 
+                  WHERE email LIKE :email";
 
         $stmt = Connect::getInstance()->prepare($query);
         $stmt->bindParam(":email", $email);
@@ -124,6 +175,7 @@ class User {
 
         $this->id = $user->id;
         $this->name = $user->name;
+        $this->email = $user->email;
         $this->message = "Usuário autenticado com sucesso!";
         return true;
 
