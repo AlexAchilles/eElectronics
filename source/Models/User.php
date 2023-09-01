@@ -153,7 +153,7 @@ class User {
 
     public function auth (string $email, string $password) : bool
     {
-        $query = "SELECT * 
+        $query = "SELECT0 * 
                   FROM users 
                   WHERE email LIKE :email";
 

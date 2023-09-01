@@ -42,6 +42,11 @@ class Web
         ]);
     }
 
+    public function apiFaq (array $data)
+    {
+        echo $this->view->render("api-faqs",[]);
+    }
+
     //     public function products (array $data) {
     //     $products = new Product();
 
