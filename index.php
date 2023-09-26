@@ -20,7 +20,9 @@ $route->get("/produto", "web:product");
 $route->get("/faq","Web:faq");
 $route->get("/loja","Web:shop");
 $route->get("/loja/{categoryName}","Web:shop");
+
 $route->get("/api-faq", "Web:apiFaq"); 
+$route->get("/api-login","Web:apiLogin");
 
 $route->get("/registro","Web:register");
 $route->get("/login","Web:login");

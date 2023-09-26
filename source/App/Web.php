@@ -42,6 +42,12 @@ class Web
         ]);
     }
 
+
+    public function apiLogin (): void
+    {
+        echo $this->view->render("api-login",[]);
+    }
+
     public function apiFaq (array $data)
     {
         echo $this->view->render("api-faqs",[]);
