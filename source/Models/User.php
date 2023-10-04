@@ -68,7 +68,9 @@ class User {
         return $this->password;
     }
 
-    public function setPassword(mixed $password): void
+    
+    // ?string no parametro
+    public function setPassword($password): void
     {
         $this->password = $password;
     }
@@ -153,7 +155,7 @@ class User {
 
     public function auth (string $email, string $password) : bool
     {
-        $query = "SELECT0 * 
+        $query = "SELECT * 
                   FROM users 
                   WHERE email LIKE :email";
 

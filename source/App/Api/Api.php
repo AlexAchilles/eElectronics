@@ -18,12 +18,12 @@ class Api
             if(!$this->user->auth($this->headers["email"],$this->headers["password"])){
                 $response = [
                     "error" => [
-                        "code" => 401,
+                        "code" => 200,
                         "type" => "unauthorized",
                         "message" => "Email e/ou senha inválidos"
                     ]
                 ];
-                $this->back($response,401);
+                $this->back($response,200);
                 return;
             }
             $this->token = (new TokenJWT())->create([
@@ -41,12 +41,12 @@ class Api
             if(!$token->verify($this->headers["token"])){
                 $response = [
                     "error" => [
-                        "code" => 401,
+                        "code" => 200,
                         "type" => "unauthorized",
                         "message" => "Token inválido"
                     ]
                 ];
-                $this->back($response,401);
+                $this->back($response,200);
                 return;
             }
             //var_dump($token->token->data->name);
@@ -58,12 +58,13 @@ class Api
            !isset($_REQUEST["name"],$_REQUEST["email"],$_REQUEST["password"])) {
             $response = [
                 "error" => [
-                    "code" => 400,
+                    "code" => 2
+                    ,
                     "type" => "invalid_data",
                     "message" => "Informe o token ou email e senha"
                 ]
             ];
-            $this->back($response,400);
+            $this->back($response,200);
         }
     }
     protected function back (array $response, int $code = 200) : void

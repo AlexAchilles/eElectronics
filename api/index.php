@@ -7,9 +7,8 @@ $route = new Router(url(),":");
 $route->namespace("Source\App\Api");
 
 $route->get("/user","Users:read");
-$route->post("/user","Users:create");
-$route->get("/user/login","Users:login");
 
+$route->get("/user/login","Users:login");
 $route->post("/user","Users:create");
 $route->get("/user/adresses","Users:listAdresses");
 
