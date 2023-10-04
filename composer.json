@@ -1,13 +1,13 @@
 {
-  "name": "AlexAchilles/eElectronics",
+  "name": "alexandre/eelectronics",
   "description": "Estrutura básica de uma aplicação MVC",
   "minimum-stability": "stable",
   "authors": [
     {
-      "name": "Fábio Santos",
-      "email": "fabiosantos@ifsul.edu.br",
+      "name": "Alexandre Achilles",
+      "email": "alexachillesk@gmail.com",
       "homepage": "https://www.ifsul.edu.br",
-      "role": "Developer"
+      "role": "Jr. Developer"
     }
   ],
   "config": {
@@ -23,9 +23,10 @@
     ]
   },
   "require": {
-    "php": ">=7.2.1",
+    "php": "7.2.1",
     "ext-pdo": "7.2",
     "coffeecode/router" : "1.0.8",
+    "coffeecode/uploader" : "2.0.4",
     "league/plates" : "3.*",
     "firebase/php-jwt" : "^5.0"
   }

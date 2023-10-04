@@ -12,6 +12,8 @@ $route->get("/user/login","Users:login");
 $route->post("/user","Users:create");
 $route->get("/user/adresses","Users:listAdresses");
 
+$route->post("/user/photo","Users:updatePhoto");
+
 // apenas para testes
 $route->get("/user/test","Users:testToken");
 $route->get("/faqs","Faqs:listFaqs");

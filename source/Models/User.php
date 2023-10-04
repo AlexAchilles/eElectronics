@@ -14,6 +14,7 @@ class User {
     private $password;
     private $address; // Atributo novo
     private $message;
+    private $photo;
 
     public function __construct (
         $name = null,
@@ -78,6 +79,16 @@ class User {
     public function getMessage(): string
     {
         return $this->message;
+    }
+
+    public function getPhoto(): ?string
+    {
+        return $this->photo;
+    }
+
+    public function setPhoto(string $photo): void
+    {
+        $this->photo = $photo;
     }
 
     public function findById (int $id) : User

@@ -8,3 +8,7 @@ const CONF_DB_NAME = "bd_eelectronics"; // aqui deve ser alterado para o nome do
 
 const CONF_URL_BASE = "http://localhost/eElectronics"; // para produção
 const CONF_URL_TEST = "http://localhost/eElectronics"; //  para teste
+
+const CONF_UPLOUD_DIR = "storage";
+const CONF_UPLOUD_IMAGE = "image";
+

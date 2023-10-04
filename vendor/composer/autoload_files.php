@@ -6,6 +6,6 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'd394b10367bd8e793b93e15632e0d5d3' => $baseDir . '/source/Boot/Config.php',
-    '2212d4061facd410d1ba97dcaed0c38a' => $baseDir . '/source/Boot/Helpers.php',
+    'd8531e57ba979d66424dfc6dc6e9ef25' => $baseDir . '/source/Boot/Config.php',
+    '98b602c4a08f93b6c264dac8c530bbea' => $baseDir . '/source/Boot/Helpers.php',
 );
